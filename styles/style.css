@@ -1,0 +1,46 @@
+html{
+    background-color: #005aaf; /* background color root of the pages*/
+    font-size: 10px; /* base font-size is 10px height*/
+    font-family: "Poppins", sans-serif; /* text font-family */ 
+}
+body{
+    width: 600px; /* the width background-color of body element  */
+    border: 5px solid black; /* the border of body element */
+    background-color: #f09c0c; /* background-color of body element */
+    margin: 0 auto; /* centering content of body element*/
+    padding: 0 20px 20px 20px; /* space around content inside of body element*/
+}
+h1{
+    margin: 0; /* To eliminate the gap */
+    font-size: 60px;
+    color: #005aaf;
+    text-shadow: 3px 3px 1px black; /* give some texture*/
+    text-align: center; /*align text to the center of content*/
+    padding: 20px 0; /* top and bottom content are 20px, right and left no pad*/
+}
+p, 
+li{
+    font-size: 16px;
+    line-height: 2; /* give some space at top and bottom of paragraph*/
+    letter-spacing: 1px; /*give some space at left and right of paragraph*/
+}
+/* class element selector*/
+.nesting{
+    font-size: 44px;
+}
+/* id element selector*/
+#family{
+    color: #005aaf;
+}
+/* attribute element selector*/
+img[src="images/Pacman.png"]{
+    width: 300px;
+    /* centering the image */
+    display: block;
+    margin: 0 auto;
+}
+/* pseudo element selector */
+a:hover{
+    color: #005aaf;
+    font-size: 17px;
+}
