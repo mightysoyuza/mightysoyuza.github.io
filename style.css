@@ -1,0 +1,176 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: darkblue;
+    padding: 2rem 0;
+    display: flex;
+    flex-wrap: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+header h1{
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-size: 96px;
+    text-align: left;
+}
+header p {
+    color: white;
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 1;
+}
+nav{
+    background-color: blue;
+    padding: 20px 0;
+}
+nav > ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: row wrap;
+    list-style: none;
+}
+nav > ul > li > a{
+    font-family: "Poppins";
+    padding: 2rem;
+    color: white;
+    text-decoration: none;
+}
+nav > ul > li > a:hover{
+    background-color: darkblue;
+    border-radius: 3px solid darkblue;
+} 
+nav > ul > li > a:hover::after{
+    content: ">";
+    margin: 0 0.3rem;
+}
+h1{
+    text-align: center;
+}
+#myBtn{
+    display: none;
+}
+div.wrapper{
+    display: flex;
+    flex-wrap: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+div.box{
+    background-color: darkblue;
+    padding: 20px;
+    color: white;
+    border: 5px solid blue;
+    border-radius: 10px;
+    width: 300px;
+    word-break: break-all;
+    overflow: auto;
+}
+div.wrapper div.box > h2{
+    font-family: "Poppins", sans-serif;
+}
+table{
+    width: 90%;
+    margin: 0 auto;
+    border: 3px solid black;
+    overflow: scroll;
+}
+tr, td{
+    text-align: center;
+    border-right: 3px solid black;
+}
+form{
+    width: 600px;
+    margin: 0 auto;
+}
+input[type="text"]{
+    font-size: 16px;
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    outline: 0;
+}
+textarea{
+    font-size: 16px;
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    outline: 0;
+    resize: none;
+}
+fieldset:invalid ~ fieldset{
+    display: none;
+}
+form:invalid button#newsletterSubmit{
+    cursor: auto;
+    pointer-events: none;
+    opacity: 0.3;
+}
+button#newsletterSubmit{
+    width: 100%;
+    font-size: 16px;
+}
+div.contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+div.contact > div.contact1 {
+    writing-mode: sideways-lr;
+    font-size: 20px;
+}
+div.contact > div.contact2{
+    writing-mode: vertical-lr;
+    font-size: 20px;
+}
+div.footer{
+    background-color: #f3f3f3;
+    padding: 20px;
+    text-align: center;
+}
+div.footer p{
+    font-size: 20px;
+}
+@media (max-width: 79em){
+    header,
+    nav > ul,
+    div.wrapper, 
+    div.contact{
+        flex-direction: column;
+    }
+    div.contact{
+        width: 200px;
+    }
+    header > h1,p{
+        text-align: center;
+    }
+    nav > ul > li > a{
+        margin-bottom: 10em;
+    }
+    #myBtn{
+        display: block;
+    }
+    nav#navbar{
+        display: none;
+        flex-direction: column;
+    }
+    div.wrapper h2{
+        text-align: center;
+    }
+    div.wrapper > div.box{
+        margin: 0.5em;
+    }
+    form{
+        width: 100%;
+    }
+}

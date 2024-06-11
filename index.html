@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+  <head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Levin Dalion">
+    <meta name="description" content="Levin dalion is student undergraduate computer science he has a passion to become frontend developer">
+    <meta property="og:description" content="Levin dalion is student undergraduate computer science he has a passion to become frontend developer">
+    <meta property="og:title" content="Levin Dalion">
+    <link rel="icon" type="image/x-icon" href="images/fire-ball-icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <title>Levin Dalion</title>
+  </head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#achievement">Achievement</a></li>
+            <li><a href="#newsletter">Newsletter</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class="myHeading">
+            <h1>Levin Dalion</h1>
+            <p>Levin dalion is student undergraduate computer science he has a passion to become frontend developer</p>
+            <button id="myBtn">Responsive</button>
+        </div>
+        <div class="img">
+            <img src="images/emoji.png" alt="emoji" width="300" height="300">
+        </div>
+    </header>
+
+    <h2 style="text-align: center; font-size: 40px;font-family: Poppins;">Here his demanded skills are: </h2>
+    <div class="wrapper" id="skills">
+        <div class="box">
+            <h2>HTML</h2>
+            <p>HTML is a structure web page content to build a website.</p>
+        </div>
+        <div class="box">
+            <h2>CSS</h2>
+            <p>CSS is a Cascading Style Sheet to create a beautiful website </p>
+        </div>
+        <div class="box">
+            <h2>JAVASCRIPT</h2>
+            <p>JAVASCRIPT is a programming language to add intreactive website .</p>
+        </div>
+    </div>
+
+    <h2 style="font-family: Poppins; font-size: 40px; text-align: center;">My Achievement</h2>
+    <div class="achievement" id="achievement">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Image</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1st Rank Web technology, Province</td>
+                    <td>
+                        <object data="pdf/sertifikat lks provinsi.pdf" type="application/pdf" height="500" width="500"></object>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Finalist Rank Web technology, National</td>
+                    <td>
+                        <object data="pdf/nasionalsertifikatwebtechnology2023.pdf" type="application/pdf" height="500" width="500"></object>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="newsletter" id="newsletter">
+        <h2 style="font-family: Poppins; font-size: 40px; text-align: center;">Your Newsletter</h2>
+        <form>
+            <fieldset>
+                <legend>
+                    <label for="email">Email</label>
+                </legend>
+                <input type="text" placeholder="Input email" required>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <label for="message">Message</label>
+                </legend>
+                <textarea placeholder="Type your message" required></textarea>
+            </fieldset>
+            <button type="submit" id="newsletterSubmit">Send</button>
+        </form>
+    </div>
+    <h2 style="font-family: Poppins; font-size: 40px; text-align: center;">My Contact</h2>
+    <p style="text-align: center;" id="clickable">Click "s" to show a contact number</p>
+    <p style="text-align: center; display: none;" id="closeable">Click "x" to close a contact number</p>
+    <div class="contact" id="contact" style="display: none;">
+        <div class="contact1">
+            <p>Whatsapp: <a href="#">+0 123-456-789</a></p>
+            <p>Email: <a href="#">Helloworld@tech.id</a></p>
+        </div>
+        <div class="contact2">
+            <p>Facebook: <a href="#">Helloworld</a></p>
+            <p>Instagram: <a href="#">Helloworld</a></p>
+        </div>
+    </div>
+
+
+    <div class="footer">
+       <p>&copy; 2024 All right reserved created by <a href="#">Levin Dalion</a></p>
+    </div>
+    <script src="main.js" defer></script>
+</body>
+</html>
